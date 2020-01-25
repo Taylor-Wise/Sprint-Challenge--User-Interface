@@ -69,6 +69,39 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+
+}
+
+header{
+    margin: 3% 0 0 0;
+    display: flex;
+    flex-direction: column
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 5% 5% 0;
+}
+
+nav a:hover{
+    color: darkgray;
+}
+
+nav img{
+    width:25%;
+}
+
+nav a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;    
+    margin-left: 3%;
+}
+
+header .large-header-img{
+    margin: 0 0 3% 0;
 }
 
 .top-content {
@@ -112,6 +145,47 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-of-type(1){
+    background-color: teal;
+}
+
+.middle-content .boxes .box:nth-of-type(2){
+    background-color: gold;
+}
+
+.middle-content .boxes .box:nth-of-type(3){
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-of-type(4){
+    background-color: coral;
+}
+
+.middle-content .boxes .box:nth-of-type(5){
+    background-color: crimson;
+}
+
+.middle-content .boxes .box:nth-of-type(6){
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-of-type(7){
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-of-type(8){
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-of-type(9){
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-of-type(10){
+    background-color: dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +217,58 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.header-content{
+    padding:  3% 2% 3% 2%;
+    border-bottom: 2px dotted gray;
+}
+
+button{
+    background: white;
+    padding: 2% 3% 2% 3%;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+}
+
+button:hover {
+    animation: wiggle 2s ease;
+    animation-iteration-count: 1;
+  }
+
+@keyframes wiggle {
+    20%  { transform: translateX(4px);  }
+    40%  { transform: translateX(-4px); }
+    60%  { transform: translateX(2px);  }
+    80%  { transform: translateX(-1px); }
+    100% { transform: translateX(0);    }
+  }
+
+.about-main-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.info-tile{
+    border-bottom: 2px dotted gray;
+    width: 46%;
+    height: 50%;
+    margin: 5% 0 0 0;
+    padding: 0 0 3% 0;
+}
+
+.info-tile p {
+    padding: 0 0 5% 0;
+}
+
+.info-tile h2{
+    padding-top: 2%;
+}
+
+.about-bottom-content{
+    padding:  5% 1% 5% 2%;
 }
