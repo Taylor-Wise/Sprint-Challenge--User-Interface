@@ -232,6 +232,19 @@ button{
     text-align: center;
 }
 
+button:hover {
+    animation: wiggle 2s ease;
+    animation-iteration-count: 1;
+  }
+
+@keyframes wiggle {
+    20%  { transform: translateX(4px);  }
+    40%  { transform: translateX(-4px); }
+    60%  { transform: translateX(2px);  }
+    80%  { transform: translateX(-1px); }
+    100% { transform: translateX(0);    }
+  }
+
 .about-main-content{
     width: 100%;
     display: flex;
